@@ -28,6 +28,11 @@ void circle_collide_circle(Body *a, Body *b) {
 
   // 5. Calculate Impulse Scalar (j)
   float e = fminf(a->r, b->r); // Use restitution
+
+  // Stabilize when small hits
+  if (fabsf(vel_along_normal) < 0.5f)
+    e = 0.0f;
+
   float j = -(1 + e) * vel_along_normal;
   j /= (a->im + b->im);
 
@@ -38,15 +43,16 @@ void circle_collide_circle(Body *a, Body *b) {
   a->v = glms_vec2_sub(a->v, glms_vec2_scale(impulse, a->im));
   b->v = glms_vec2_add(b->v, glms_vec2_scale(impulse, b->im));
 
-  const float percent = 0.4f; // How much of the overlap to fix (0.2 to 0.8)
-  const float slop = 0.01f;   // Allowed overlap before correction kicks in
+  // Positional correction to prevent sinking
+  const float percent = 0.2f; // Reduced from 0.4 to reduce overcorrection jitter
+  const float slop = 0.05f;   // Increased from 0.01 to allow small overlaps
 
   // Calculate how much they are overlapping
   float penetration = r_sum - d;
 
   if (penetration > slop) {
-    vec2s correction =
-        glms_vec2_scale(normal, (penetration / (a->im + b->im)) * percent);
+    float correction_magnitude = ((penetration - slop) / (a->im + b->im)) * percent;
+    vec2s correction = glms_vec2_scale(normal, correction_magnitude);
 
     // Move them apart proportional to their inverse mass
     a->p = glms_vec2_sub(a->p, glms_vec2_scale(correction, a->im));

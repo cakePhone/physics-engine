@@ -83,15 +83,20 @@ CMakeFiles/PhysicsEngine.dir/src/main.c.o: src/main.c \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/timesize.h \
   /usr/include/bits/types.h \
+  /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/types/__sigset_t.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/locale_t.h \
   /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_itimerspec.h \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/struct_tm.h \
   /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/timer_t.h \
   /usr/include/bits/typesizes.h \
@@ -112,6 +117,7 @@ CMakeFiles/PhysicsEngine.dir/src/main.c.o: src/main.c \
   /usr/include/sys/cdefs.h \
   /usr/include/sys/select.h \
   /usr/include/sys/types.h \
+  /usr/include/time.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdalign.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h \
@@ -1094,6 +1100,14 @@ CMakeFiles/PhysicsEngine.dir/src/graphics/render.c.o:
 
 /usr/include/cglm/simd/sse2/quat.h:
 
+/usr/include/cglm/simd/sse2/mat3.h:
+
+/usr/include/cglm/simd/sse2/mat2.h:
+
+/usr/lib/crtn.o:
+
+/usr/include/cglm/simd/sse2/affine.h:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h:
 
 /usr/include/cglm/struct.h:
@@ -1135,6 +1149,8 @@ src/graphics/render.c:
 /usr/include/bits/types/time_t.h:
 
 /usr/include/cglm/struct/ivec2.h:
+
+/usr/include/bits/types/struct_itimerspec.h:
 
 /usr/include/bits/struct_rwlock.h:
 
@@ -1278,6 +1294,18 @@ include/graphics/render.h:
 
 src/main.c:
 
+/usr/include/cglm/frustum.h:
+
+/usr/include/bits/types/struct_tm.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/time.h:
+
+/usr/include/bits/atomic_wide_counter.h:
+
+/usr/include/cglm/affine-pre.h:
+
 src/math/vecs.c:
 
 /usr/include/bits/fp-fast.h:
@@ -1318,6 +1346,8 @@ CMakeFiles/PhysicsEngine.dir/src/physics/collision.c.o:
 
 /usr/include/bits/stdio_lim.h:
 
+/usr/include/bits/time.h:
+
 /usr/include/bits/types/__mbstate_t.h:
 
 /usr/include/cglm/struct/vec3.h:
@@ -1327,12 +1357,6 @@ CMakeFiles/PhysicsEngine.dir/src/physics/collision.c.o:
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdalign.h:
 
 /usr/include/bits/types/struct_FILE.h:
-
-/usr/include/bits/wchar.h:
-
-/usr/include/bits/atomic_wide_counter.h:
-
-/usr/include/cglm/affine-pre.h:
 
 CMakeFiles/PhysicsEngine.dir/src/stb/impl.c.o:
 
@@ -1390,8 +1414,6 @@ src/physics/physics.c:
 
 /usr/include/cglm/ease.h:
 
-/usr/include/cglm/frustum.h:
-
 /usr/include/cglm/mat2x4.h:
 
 /usr/include/cglm/mat3.h:
@@ -1407,11 +1429,3 @@ src/physics/physics.c:
 /usr/include/cglm/simd/intrin.h:
 
 /usr/include/cglm/project.h:
-
-/usr/lib/crtn.o:
-
-/usr/include/cglm/simd/sse2/affine.h:
-
-/usr/include/cglm/simd/sse2/mat2.h:
-
-/usr/include/cglm/simd/sse2/mat3.h:
