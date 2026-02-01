@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/oreo/Projects/physics-engine/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

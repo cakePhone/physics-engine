@@ -1,1 +1,50 @@
-build/compile_commands.json
+[
+{
+  "directory": "/home/oreo/Projects/physics-engine",
+  "command": "/usr/bin/cc  -I/home/oreo/Projects/physics-engine/include -std=gnu11 -I/usr/include -o CMakeFiles/PhysicsEngine.dir/src/graphics/render.c.o -c /home/oreo/Projects/physics-engine/src/graphics/render.c",
+  "file": "/home/oreo/Projects/physics-engine/src/graphics/render.c",
+  "output": "CMakeFiles/PhysicsEngine.dir/src/graphics/render.c.o"
+},
+{
+  "directory": "/home/oreo/Projects/physics-engine",
+  "command": "/usr/bin/cc  -I/home/oreo/Projects/physics-engine/include -std=gnu11 -I/usr/include -o CMakeFiles/PhysicsEngine.dir/src/main.c.o -c /home/oreo/Projects/physics-engine/src/main.c",
+  "file": "/home/oreo/Projects/physics-engine/src/main.c",
+  "output": "CMakeFiles/PhysicsEngine.dir/src/main.c.o"
+},
+{
+  "directory": "/home/oreo/Projects/physics-engine",
+  "command": "/usr/bin/cc  -I/home/oreo/Projects/physics-engine/include -std=gnu11 -I/usr/include -o CMakeFiles/PhysicsEngine.dir/src/math/vecs.c.o -c /home/oreo/Projects/physics-engine/src/math/vecs.c",
+  "file": "/home/oreo/Projects/physics-engine/src/math/vecs.c",
+  "output": "CMakeFiles/PhysicsEngine.dir/src/math/vecs.c.o"
+},
+{
+  "directory": "/home/oreo/Projects/physics-engine",
+  "command": "/usr/bin/cc  -I/home/oreo/Projects/physics-engine/include -std=gnu11 -I/usr/include -o CMakeFiles/PhysicsEngine.dir/src/physics/body.c.o -c /home/oreo/Projects/physics-engine/src/physics/body.c",
+  "file": "/home/oreo/Projects/physics-engine/src/physics/body.c",
+  "output": "CMakeFiles/PhysicsEngine.dir/src/physics/body.c.o"
+},
+{
+  "directory": "/home/oreo/Projects/physics-engine",
+  "command": "/usr/bin/cc  -I/home/oreo/Projects/physics-engine/include -std=gnu11 -I/usr/include -o CMakeFiles/PhysicsEngine.dir/src/physics/circle.c.o -c /home/oreo/Projects/physics-engine/src/physics/circle.c",
+  "file": "/home/oreo/Projects/physics-engine/src/physics/circle.c",
+  "output": "CMakeFiles/PhysicsEngine.dir/src/physics/circle.c.o"
+},
+{
+  "directory": "/home/oreo/Projects/physics-engine",
+  "command": "/usr/bin/cc  -I/home/oreo/Projects/physics-engine/include -std=gnu11 -I/usr/include -o CMakeFiles/PhysicsEngine.dir/src/physics/collision.c.o -c /home/oreo/Projects/physics-engine/src/physics/collision.c",
+  "file": "/home/oreo/Projects/physics-engine/src/physics/collision.c",
+  "output": "CMakeFiles/PhysicsEngine.dir/src/physics/collision.c.o"
+},
+{
+  "directory": "/home/oreo/Projects/physics-engine",
+  "command": "/usr/bin/cc  -I/home/oreo/Projects/physics-engine/include -std=gnu11 -I/usr/include -o CMakeFiles/PhysicsEngine.dir/src/physics/physics.c.o -c /home/oreo/Projects/physics-engine/src/physics/physics.c",
+  "file": "/home/oreo/Projects/physics-engine/src/physics/physics.c",
+  "output": "CMakeFiles/PhysicsEngine.dir/src/physics/physics.c.o"
+},
+{
+  "directory": "/home/oreo/Projects/physics-engine",
+  "command": "/usr/bin/cc  -I/home/oreo/Projects/physics-engine/include -std=gnu11 -I/usr/include -o CMakeFiles/PhysicsEngine.dir/src/stb/impl.c.o -c /home/oreo/Projects/physics-engine/src/stb/impl.c",
+  "file": "/home/oreo/Projects/physics-engine/src/stb/impl.c",
+  "output": "CMakeFiles/PhysicsEngine.dir/src/stb/impl.c.o"
+}
+]
