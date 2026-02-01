@@ -298,6 +298,30 @@ src/physics/physics.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhysicsEngine.dir/build.make CMakeFiles/PhysicsEngine.dir/src/physics/physics.c.s
 .PHONY : src/physics/physics.c.s
 
+src/physics/rectangle.o: src/physics/rectangle.c.o
+.PHONY : src/physics/rectangle.o
+
+# target to build an object file
+src/physics/rectangle.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhysicsEngine.dir/build.make CMakeFiles/PhysicsEngine.dir/src/physics/rectangle.c.o
+.PHONY : src/physics/rectangle.c.o
+
+src/physics/rectangle.i: src/physics/rectangle.c.i
+.PHONY : src/physics/rectangle.i
+
+# target to preprocess a source file
+src/physics/rectangle.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhysicsEngine.dir/build.make CMakeFiles/PhysicsEngine.dir/src/physics/rectangle.c.i
+.PHONY : src/physics/rectangle.c.i
+
+src/physics/rectangle.s: src/physics/rectangle.c.s
+.PHONY : src/physics/rectangle.s
+
+# target to generate assembly for a file
+src/physics/rectangle.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhysicsEngine.dir/build.make CMakeFiles/PhysicsEngine.dir/src/physics/rectangle.c.s
+.PHONY : src/physics/rectangle.c.s
+
 src/stb/impl.o: src/stb/impl.c.o
 .PHONY : src/stb/impl.o
 
@@ -352,6 +376,9 @@ help:
 	@echo "... src/physics/physics.o"
 	@echo "... src/physics/physics.i"
 	@echo "... src/physics/physics.s"
+	@echo "... src/physics/rectangle.o"
+	@echo "... src/physics/rectangle.i"
+	@echo "... src/physics/rectangle.s"
 	@echo "... src/stb/impl.o"
 	@echo "... src/stb/impl.i"
 	@echo "... src/stb/impl.s"

@@ -1,6 +1,7 @@
 #include "graphics/render.h"
 #include "physics/body.h"
 #include "physics/physics.h"
+#include "physics/rectangle.h"
 #include <cglm/types-struct.h>
 #include <raylib.h>
 #include <stdbool.h>
@@ -34,8 +35,8 @@ int main(void) {
   vec2s minPos = {0, 0};
   vec2s maxPos = {width, height};
 
-  vec2s minVel = {-200, -200};
-  vec2s maxVel = {200, 200};
+  vec2s minVel = {-100, -100};
+  vec2s maxVel = {100, 100};
 
   PhysicsWorld world = world_new();
 
@@ -44,9 +45,20 @@ int main(void) {
     vec2s vel = rand_vec2s_range(minVel, maxVel);
     vec2s acc = rand_vec2s_range((vec2s){-100, 1000}, (vec2s){100, 1000});
 
+    Shape s;
+    ShapeType t;
+    if (i % 3 == 0) {
+      s = (Shape){.rect =
+                      rectangle_new(rand_range(10, 30), rand_range(10, 30))};
+      t = RectType;
+    } else {
+      s = (Shape){.circle = circle_new(rand_range(5, 15))};
+      t = CircleType;
+    }
+
     Body b = body_new(pos, vel, acc, rand_range(10, 100), rand_range(0.6, 1),
-                      rand_range(0, 1), rand_color(), CircleType,
-                      (Shape){(Circle){rand_range(5, 15)}});
+                      rand_range(0.2, 0.5), rand_color(), t, s,
+                      rand_range(0, 6.28f), rand_range(-1.0f, 1.0f));
 
     world_add_body(&world, b);
   }

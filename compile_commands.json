@@ -43,6 +43,12 @@
 },
 {
   "directory": "/home/oreo/Projects/physics-engine",
+  "command": "/usr/bin/cc  -I/home/oreo/Projects/physics-engine/include -std=gnu11 -I/usr/include -o CMakeFiles/PhysicsEngine.dir/src/physics/rectangle.c.o -c /home/oreo/Projects/physics-engine/src/physics/rectangle.c",
+  "file": "/home/oreo/Projects/physics-engine/src/physics/rectangle.c",
+  "output": "CMakeFiles/PhysicsEngine.dir/src/physics/rectangle.c.o"
+},
+{
+  "directory": "/home/oreo/Projects/physics-engine",
   "command": "/usr/bin/cc  -I/home/oreo/Projects/physics-engine/include -std=gnu11 -I/usr/include -o CMakeFiles/PhysicsEngine.dir/src/stb/impl.c.o -c /home/oreo/Projects/physics-engine/src/stb/impl.c",
   "file": "/home/oreo/Projects/physics-engine/src/stb/impl.c",
   "output": "CMakeFiles/PhysicsEngine.dir/src/stb/impl.c.o"
