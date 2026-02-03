@@ -1,34 +1,26 @@
 #pragma once
-#include "physics/circle.h"
-#include "physics/rectangle.h"
+#include "physics/shapes.h"
 #include <cglm/types-struct.h>
 #include <raylib.h>
 
-typedef enum { CircleType, RectType } ShapeType;
-
-typedef union {
-  Circle circle;
-  Rect rect;
-} Shape;
-
 typedef struct body {
   // Linear Motion
-  vec2s p;     // position
-  vec2s v;     // velocity
-  vec2s a;     // acceleration
+  vec2s p; // position
+  vec2s v; // velocity
+  vec2s a; // acceleration
 
   // Rotational Motion
-  float angle;     // rotation angle in radians
-  float av;        // angular velocity (radians/second)
-  float torque;    // accumulated torque
+  float angle;  // rotation angle in radians
+  float av;     // angular velocity (radians/second)
+  float torque; // accumulated torque
 
   // Physical Constants
-  float m;   // mass
-  float im;  // inverted mass: pre-calculated 1.0f / mass
-  float I;   // moment of inertia
-  float iI;  // inverted moment of inertia: pre-calculated 1.0f / I
-  float r;   // restitution
-  float f;   // friction
+  float m;  // mass
+  float im; // inverted mass: pre-calculated 1.0f / mass
+  float I;  // moment of inertia
+  float iI; // inverted moment of inertia: pre-calculated 1.0f / I
+  float r;  // restitution
+  float f;  // friction
 
   // Visuals/Metadata
   Color c; // color

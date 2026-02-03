@@ -1,7 +1,6 @@
 #include "physics/physics.h"
 #include "physics/body.h"
 #include <stb/stb_ds.h>
-#include <stdlib.h>
 #include <sys/types.h>
 
 PhysicsWorld world_new(void) {
